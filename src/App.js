@@ -7,19 +7,15 @@ function App() {
 
   const ConsoleLogList = (list) => {
     setInputList(list);
-   
-  }
-  
+  };
 
   useEffect(() => {
-    if(inputList.length !== 0){
-      inputList.forEach(element => {
-        console.log(element.links.download); 
+    if (inputList.length !== 0) {
+      inputList.forEach((element) => {
+        console.log(element.links.download);
       });
     }
-
   }, [inputList]);
-
 
   return (
     <div className="App">
